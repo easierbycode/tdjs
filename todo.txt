@@ -1,0 +1,12 @@
+WeeWikiPaint
+
+Minimum Marketing Features:
+* marketing home-age
+- collaborative painting page (very basic)
+- wiki-fy the pages
+- more-complex painting?
+- more-complex marketing?
+- more-collaborative features?
+
+User Stories:
+* "hello world" server
