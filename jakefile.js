@@ -2,6 +2,8 @@
 
 "use strict";
 
+desc("Build and test");
+
 task('default', ['lint']);
 
 desc('lint everything');
@@ -32,6 +34,11 @@ task('lint', [], function() {
     };
 
     lint.validateFileList(files.toArray(), options, {});
+});
+
+desc("Integrate");
+task("integrate", ["default"], function() {
+    console.log("Integration logic goes here");
 });
 
 desc('Example!');
