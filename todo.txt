@@ -10,3 +10,11 @@ Minimum Marketing Features:
 
 User Stories:
 * "hello world" server
+- "hello world" client (one browser)
+- support multiple browsers
+- marketing copy
+
+Engineering Tasks:
+* continuous integration
+- server-side testing
+- client-side testing
