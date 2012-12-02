@@ -1,4 +1,12 @@
+Sandbox for following along with Let's Code: Test-Driven JavaScript.
+http://beta.letscodejavascript.com/v2/episodes
+
 WeeWikiPaint
+
+To build on Windows:
+- Install node.js
+- Install Git
+- Clone repository
 
 To build:
 - assumes Node.js is installed
