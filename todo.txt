@@ -19,4 +19,6 @@ Engineering Tasks:
 - client-side testing
 
 To do on current task:
-- make build fail when Lint fails
+- Choose framework
+- Abstract it
+- Swap out a different framework to make sure abstraction works
