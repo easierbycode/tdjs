@@ -1,0 +1,10 @@
+{
+  "name": "WeeWikiPaint",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "jake": "~0.5.7",
+    "jshint": "~0.9.1",
+    "nodeunit": "~0.7.4"
+  }
+}
