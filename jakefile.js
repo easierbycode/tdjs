@@ -44,7 +44,8 @@
   task('test', [], function() {
     var reporter = require('nodeunit').reporters.minimal;
     reporter.run(['src/server/_server_test.js'], null, function (failures) {
-      console.log('test complete');
+      if (failures) fail('Tests failed');
+      console.log('Tests complete');
       complete();
     });
   }, {async: true});
