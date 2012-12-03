@@ -4,7 +4,7 @@
 
   desc("Build and test");
 
-  task('default', ['lint']);
+  task('default', ['lint', 'test']);
 
   desc('lint everything');
   task('lint', [], function() {
@@ -39,6 +39,11 @@
       node: true
     };
   }
+
+  desc('Test everything');
+  task('test', [], function() {
+    console.log('test');
+  });
 
   desc("Integrate");
   task("integrate", ["default"], function() {
