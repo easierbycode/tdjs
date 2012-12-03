@@ -19,7 +19,7 @@ Engineering Tasks:
 - client-side testing
 
 To do on current task:
-
+- make build fail when tests fail
 
 Future tasks:
 - Abstract test framework (swap out a different framework to make sure abstraction works)
