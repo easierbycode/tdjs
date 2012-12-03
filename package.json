@@ -5,6 +5,7 @@
   "dependencies": {
     "jake": "~0.5.7",
     "jshint": "~0.9.1",
-    "nodeunit": "~0.7.4"
+    "nodeunit": "~0.7.4",
+    "nodelint": "~0.6.2"
   }
 }

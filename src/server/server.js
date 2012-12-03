@@ -1,5 +1,5 @@
 "use strict";
 
-exports.number = function() {
+exports.number = function () {
   return 3;
 };
