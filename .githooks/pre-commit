@@ -12,3 +12,21 @@ function failCommit() {
 }
 
 printf 'Checking Content'
+content_errors=0
+while IFS= read -r -d $'\0' file; do
+    result=$(grep '_test\.[a-zA-Z0-9_]*(' $file 2>&1)
+    if [[ $result ]]; then
+        echo ''
+        echo '----------------------------------------'
+        echo $file 'includes disallowed content:'
+        echo $result
+        echo '----------------------------------------'
+        content_errors=$(($content_errors+1))
+    else
+        printf '.'
+    fi
+done < <(find . -name '*[^test].js' -print0)
+if [[ $content_errors -gt 0 ]]; then
+    failCommit "$content_errors Content Errors"
+fi
+echo ''
